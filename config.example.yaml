@@ -1,0 +1,56 @@
+data:
+  provider: akshare  # akshare | tushare | auto
+  tushare_token: ""
+  cache_dir: .cache
+  use_cache: true
+  markets: ["SH", "SZ", "BJ"]
+
+macd:
+  fast: 12
+  slow: 26
+  signal: 9
+
+zero_band:
+  quarter: 0.01
+  month: 0.0
+  week: 0.015
+  daily: 0.0
+
+macd_filters:
+  last_n_q_bars: 2
+  enable_daily_filter: false
+  daily_rule: dif_gt_dea_and_hist_gt_0
+
+market_cap:
+  max_total_market_cap: 1.0e11
+  field: total_market_cap
+
+financial:
+  eps_field_candidates:
+    - 基本每股收益(元)
+    - 基本每股收益
+    - 每股收益
+  net_profit_field_candidates:
+    - 归属于母公司股东的净利润(元)
+    - 归母净利润
+    - 归属母公司股东的净利润
+  require_net_profit_positive: true
+
+moving_average:
+  enabled: true
+  price_above: [20]
+  ma_order: [20, 60]
+
+score_weights:
+  quarter_cross: 2.0
+  month_opening: 1.5
+  week_strength: 1.0
+  ma_strength: 1.0
+
+output:
+  export: ["csv", "xlsx"]
+  output_dir: output
+  html_report: true
+
+max_workers: 8
+log_level: INFO
