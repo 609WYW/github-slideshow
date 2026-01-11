@@ -1,0 +1,44 @@
+app:
+  output_dir: output
+  export: ["csv", "xlsx", "html"]
+  max_workers: 8
+  use_cache: true
+  cache_dir: .cache
+  limit: null
+  log_level: INFO
+
+provider:
+  name: akshare  # akshare or tushare
+  tushare_token: ""
+
+filters:
+  st_keywords: ["ST", "*ST", "退"]
+
+  market_cap:
+    enabled: true
+    field: total_market_cap
+    max_cny: 1.0e11
+
+  macd:
+    last_n_quarter: 2
+    zero_band_q: 0.01
+    zero_band_w: 0.015
+    min_opening_growth: 0.0
+    enable_daily_filter: false
+
+  financial:
+    require_net_profit_positive: true
+
+  ma:
+    windows: [5, 10, 20]
+    converge_pct: 0.02
+    enable_converge: true
+    enable_bullish: true
+
+scoring:
+  weights:
+    quarter_cross_recency: 4.0
+    month_opening_growth: 2.0
+    week_strength: 1.5
+    ma_bullish_bonus: 1.0
+    ma_converge_bonus: 0.5
