@@ -1,13 +1,20 @@
-# Your GitHub Learning Lab Repository for Introducing GitHub
+# APPD（Stage 0）
 
-Welcome to **your** repository for your GitHub Learning Lab course. This repository will be used during the different activities that I will be guiding you through. See a word you don't understand? We've included an emoji 📖 next to some key terms. Click on it to see its definition.
+PySide6 空壳版 APPD 主程序，当前提供：
 
-Oh! I haven't introduced myself...
+- 顶部菜单（文件/视图/工具/访问服务器/帮助）
+- 两条可显示/隐藏的工具栏（通过“视图(V)”勾选项控制）
+- 左侧导航、中央占位页、右侧按钮区占位
+- 所有中文文案集中在 `src/app/ui_strings/zh_cn.py`
 
-I'm the GitHub Learning Lab bot and I'm here to help guide you in your journey to learn and master the various topics covered in this course. I will be using Issue and Pull Request comments to communicate with you. In fact, I already added an issue for you to check out.
+## 运行
 
-![issue tab](https://lab.github.com/public/images/issue_tab.png)
+```bash
+python -m app.main
+```
 
-I'll meet you over there, can't wait to get started!
+## 测试
 
-This course is using the :sparkles: open source project [reveal.js](https://github.com/hakimel/reveal.js/). In some cases we’ve made changes to the history so it would behave during class, so head to the original project repo to learn more about the cool people behind this project.
+```bash
+pytest -q
+```
