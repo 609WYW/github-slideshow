@@ -1,0 +1,96 @@
+{
+  "app": {
+    "window_title": "轴向柱塞泵设计软件(APPD)（试用版）",
+    "status_ready": "就绪",
+    "status_module_switched": "已切换模块：{module_name}"
+  },
+  "menus": {
+    "file": {
+      "title": "文件(F)",
+      "start_design": "开始设计(N)",
+      "exit_design": "退出设计(E)",
+      "open_model": "打开泵型号(O)",
+      "save": "保存",
+      "save_as": "另存为",
+      "exit_program": "退出程序(X)"
+    },
+    "view": {
+      "title": "视图(V)",
+      "standard_toolbar": "标准工具条(T)",
+      "window_toolbar": "窗口控制工具条(S)"
+    },
+    "tools": {
+      "title": "工具",
+      "material_database": "材料数据库",
+      "export_word": "输出到Word",
+      "export_3d": "输出三维模型",
+      "hypneu": "与HyPneu联合仿真",
+      "optimize": "优化工具",
+      "material_pairing": "材料配合",
+      "default_params": "默认参数"
+    },
+    "server": {
+      "title": "访问服务器",
+      "upload_design": "上传设计型号",
+      "download_design": "下载设计型号"
+    },
+    "help": {
+      "title": "帮助(H)",
+      "about": "关于APPD软件(A)",
+      "user_manual": "用户手册",
+      "technical_manual": "技术手册"
+    }
+  },
+  "modules": {
+    "piston_pump_design": "柱塞泵设计",
+    "tehl": "TEHL",
+    "contamination": "污染",
+    "servo_valve": "伺服阀",
+    "gerotor_pump": "摆线泵",
+    "gear_pump": "齿轮泵",
+    "actuator_cylinder": "作动缸"
+  },
+  "pages": {
+    "home_suffix": "Home 页面",
+    "placeholder_message": "{module_name} - Stage 2 占位页（后续阶段补充业务UI）",
+    "load_spectrum": {
+      "title": "载荷谱",
+      "rated_pressure": "额定压力",
+      "table_headers": {
+        "index": "序号",
+        "max_pressure": "最大压力(MPa)",
+        "frequency": "出现频率(1/小时)"
+      },
+      "confirm": "确认",
+      "side_buttons": [
+        "缸体寿命",
+        "轴承寿命",
+        "配流副寿命",
+        "滑靴副寿命",
+        "球铰寿命"
+      ]
+    }
+  },
+  "action_ids": {
+    "file.start_design": "file.start_design",
+    "file.exit_design": "file.exit_design",
+    "file.open_model": "file.open_model",
+    "file.save": "file.save",
+    "file.save_as": "file.save_as",
+    "file.exit_program": "file.exit_program",
+    "view.standard_toolbar": "view.standard_toolbar",
+    "view.window_toolbar": "view.window_toolbar",
+    "tools.material_database": "tools.material_database",
+    "tools.export_word": "tools.export_word",
+    "tools.export_3d": "tools.export_3d",
+    "tools.hypneu": "tools.hypneu",
+    "tools.optimize": "tools.optimize",
+    "tools.material_pairing": "tools.material_pairing",
+    "tools.default_params": "tools.default_params",
+    "server.upload_design": "server.upload_design",
+    "server.download_design": "server.download_design",
+    "help.about": "help.about",
+    "help.user_manual": "help.user_manual",
+    "help.technical_manual": "help.technical_manual"
+  }
+}

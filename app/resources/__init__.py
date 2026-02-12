@@ -1,0 +1,1 @@
+"""Resource path helpers."""
